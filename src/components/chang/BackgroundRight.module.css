@@ -1,0 +1,10 @@
+.container {
+  width: 50%;
+  background: yellow;
+  height: 38rem;
+  border-bottom-right-radius: 10px;
+}
+
+.container:hover {
+  filter: brightness(70%);
+}

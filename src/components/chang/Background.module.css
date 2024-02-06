@@ -1,0 +1,45 @@
+.background {
+  width: 60rem;
+  height: 40rem;
+}
+
+.main {
+  display: flex;
+}
+
+.bar {
+  display: flex;
+  height: 2.5rem;
+  background-color: #eceff7;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+
+.circle {
+  margin: 0 auto;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 13px;
+}
+
+.red {
+  background-color: #ff5f57;
+  border: 0.5px solid #e04038;
+  left: 20px;
+}
+
+.yellow {
+  background: #febc2d;
+  border: 0.5px solid #df9d0e;
+  left: 45px;
+}
+
+.green {
+  background: #28c840;
+  border: 0.5px solid #20af3a;
+  left: 70px;
+}

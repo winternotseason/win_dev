@@ -1,0 +1,12 @@
+.container {
+  width: 50%;
+  background: #FEFEFE;
+  height: 38rem;
+  border-bottom-left-radius:10px;
+ 
+}
+
+.container:hover {
+  transition-duration: 1s;
+  filter: brightness(70%);
+}
