@@ -3,21 +3,21 @@ import styles from "./TopBar.module.css";
 import logo from "./images/logo.png";
 
 const TopBar = () => {
-    const [time, setTime] = useState({month:2, date:6, day:'화', pm:true ,hour:21, minute:9 });
+    const [time, setTime] = useState({month:2, date:6, day:'화', pm:'오전' ,hour:21, minute:45 });
     const week = ['일', '월', '화', '수', '목', '금', '토'];
 
-    setInterval(() => {
-        const today = new Date();
-        const today_obj = {
-            month : today.getMonth(),
-            date : today.getDate(),
-            day : week[today.getDay()],
-            hour : today.getHours(),
-            minute : today.getMinutes(),
-            pm : today.getHours() < 12 ? '오전' : '오후'
-        }
-        setTime(today_obj)
-    }, 300000);
+    // setInterval(() => {
+    //     const today = new Date();
+    //     const today_obj = {
+    //         month : today.getMonth(),
+    //         date : today.getDate(),
+    //         day : '(' + week[today.getDay()] + ')',
+    //         hour : today.getHours(),
+    //         minute : today.getMinutes() < 10 ? '0' + today.getMinutes() : today.getMinutes(),
+    //         pm : today.getHours() < 12 ? '오전' : '오후'
+    //     }
+    //     setTime(today_obj)
+    // }, 5000);
   return (
     <div className={styles.topBar}>
       <div className={styles.topBarLeft}>

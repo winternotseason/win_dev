@@ -1,8 +1,8 @@
 .container {
   width: 50%;
   background: yellow;
-  height: 38rem;
-  border-bottom-right-radius: 10px;
+  height:30rem;
+  
 }
 
 .container:hover {

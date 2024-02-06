@@ -1,9 +1,7 @@
 .container {
   width: 50%;
-  background: #FEFEFE;
-  height: 38rem;
-  border-bottom-left-radius:10px;
- 
+  background: #fefefe;
+  height: 30rem;
 }
 
 .container:hover {

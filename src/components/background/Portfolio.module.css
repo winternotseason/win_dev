@@ -1,0 +1,22 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 10rem;
+  height: auto;
+  top: 5%;
+  left: 3%;
+}
+
+.portfolio img {
+  width: 7rem;
+  height: auto;
+}
+
+.portfolio span {
+  color: white;
+  font-weight: 800;
+  font-size: 0.9rem;
+}

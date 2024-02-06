@@ -4,9 +4,10 @@ import BackgroundRight from "./BackgroundRight";
 import styles from "./Background.module.css";
 import { useDrag } from "react-use-gesture";
 
-const Background = () => {
+const Background = (props) => {
+
   const [logoPos, setLogoPos] = useState({ x: 0, y: 0 });
-  const [visible, setVisible] = useState(true);
+
   const bindLogoPos = useDrag((params) => {
     setLogoPos({
       x: params.offset[0],
@@ -19,17 +20,14 @@ const Background = () => {
     left: logoPos.x,
   };
 
-  const onClick = () => {
-    setVisible(false);
-  };
   return (
     <Fragment>
-      {visible && (
+      {props.visible && (
         <div className={styles.background} style={tempStyle} {...bindLogoPos()}>
           <div className={styles.bar}>
             <div
               className={`${styles.circle} ${styles.red}`}
-              onClick={onClick}
+              onClick={props.onClick}
             />
             <div className={`${styles.circle} ${styles.yellow}`} />
             <div className={`${styles.circle} ${styles.green}`} />
