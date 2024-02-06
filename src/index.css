@@ -1,8 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* fonts */
+
+@font-face {
+  font-family: "AppleSDGothicNeo";
+  src: url("./fonts/AppleSDGothicNeoM.ttf");
+}
+
+
 
 body {
   margin: 0;
   padding: 0;
+
 }
+

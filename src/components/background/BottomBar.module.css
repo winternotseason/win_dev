@@ -1,0 +1,30 @@
+.bottomBar {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 45rem;
+  height: 6rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.bottomBar > div {
+  width: 4.7rem;
+  height: 4.7rem;
+
+  border-radius: 17px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomBar > div > img {
+  width: 5.2rem;
+  height: 5.2rem;
+  object-fit: cover;
+}
