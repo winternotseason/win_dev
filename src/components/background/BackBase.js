@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Background from "../chang/Background";
 import styles from "./BackBase.module.css";
 import BottomBar from "./BottomBar";
-import Portfolio from "./Portfolio";
+import PortfolioFolder from "./Portfolio";
 import TopBar from "./TopBar";
+import TopBarWidget from "./TopBarWidget";
 
 const BackBase = () => {
   const [visible, setVisible] = useState(false);
@@ -13,8 +14,9 @@ const BackBase = () => {
   return (
     <div className={styles.back}>
       <TopBar />
-      <Background onClick={onClick} visible={visible}/>
-      <Portfolio setVisible={setVisible}/>
+      <TopBarWidget />
+      <Background onClick={onClick} visible={visible} />
+      <PortfolioFolder setVisible={setVisible} />
       <BottomBar />
     </div>
   );

@@ -1,14 +1,14 @@
 import React from "react";
 import folderImg from "./images/folder.png";
-import styles from "./Portfolio.module.css";
+import styles from "./PortfolioFolder.module.css";
 
-const Portfolio = (props) => {
-  const onClick = () => {
-    props.setVisible(true);
-  };
+const PortfolioFolder = (props) => {
+  // const onClick = () => {
+  //   props.setVisible(true);
+  // };
   return (
     <>
-      <div className={styles.portfolio} onDoubleClick={onClick}>
+      <div className={styles.portfolio} >
         <img src={folderImg} alt="folder" />
         <span className={styles.title}>My Portfolio!</span>
       </div>
@@ -16,4 +16,4 @@ const Portfolio = (props) => {
   );
 };
 
-export default Portfolio;
+export default PortfolioFolder;
